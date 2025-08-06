@@ -1,0 +1,37 @@
+{
+  "name": "website-plan--javaria-agencies",
+  "proxy": "http://localhost:8080",
+  "version": "1.0.0",
+  "description": "ecommerce rest api",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "Jainam Jain",
+  "license": "MIT",
+  "dependencies": {
+    "@react-oauth/google": "^0.12.2",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.2",
+    "colors": "^1.4.0",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.515.0",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.15.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.10",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "react-hot-toast": "^2.5.2"
+  }
+}
